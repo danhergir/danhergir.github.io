@@ -3,32 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>Daniel Hernandez</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Your Name</h1>
+        <img src="your-image.jpg" alt="Daniel Hernandez" class="profile-img">
+        <h1>Daniel Hernandez</h1>
         <nav>
-            <a href="#projects">Projects</a>
-            <a href="#blog">Blog</a>
+            <a href="#about">About Me</a>
+            <a href="#education">Education</a>
+            <a href="#experience">Work Experience</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
+
     <section id="about">
         <h2>About Me</h2>
-        <p>Short bio or introduction.</p>
+        <p>
+            I am Daniel Hernandez, I have a BS Major in Computer Science from BYU-Idaho. I worked for more than 4 years on software development. I co-founded Dataplicada in 2020 where I served as CTO and Data Science Specialist. My last experience was as a Software Engineer Intern at Tesla.
+        </p>
     </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <!-- Add your projects here -->
+
+    <section id="education">
+        <h2>Education</h2>
+        <p><strong>Brigham Young University - Idaho</strong> (Dec 2019 - July 2023)</p>
+        <p>BS, Computer Science</p>
     </section>
-    <section id="blog">
-        <h2>Blog</h2>
-        <!-- Add blog section -->
+
+    <section id="experience">
+        <h2>Work Experience</h2>
+        
+        <h3>Data Science Specialist - Dataplicada (Aug 2020 - Present)</h3>
+        <p>
+            As the Chief Technology Officer (CTO) and Data Science Specialist at Dataplicada, I led the development of feedbacker.cx, a comprehensive platform designed to enable businesses to harness the power of data for strategic decision-making. The platform was built from scratch using JavaScript, React.js, Laravel, and PHP, and it was deployed on Linux-based servers to ensure high performance and reliability.
+        </p>
+        <p>
+            I also engineered an Extract, Transform, Load (ETL) system to capture and process customer feedback from more than 100 third-party businesses. This system utilized secure TCP/IP protocols to manage feedback transfer, ensuring data integrity and security. Additionally, I implemented a Retrieval-Augmented Generation (RAG) agent using advanced language models such as GPT-4 and Llama3, which extracted valuable insights from this feedback, helping companies optimize their R&D, Marketing & Sales, Production, HR, and Finance operations.
+        </p>
+
+        <h3>Software Engineer Intern - Tesla, Inc. (Sep 2022 - Dec 2022)</h3>
+        <p>
+            During my time at Tesla, I worked on the Powerwall production line, where I contributed to enhancing manufacturing efficiency by developing and modifying line layouts, improving material flow, reducing waste, and improving ergonomics. By utilizing Lean Manufacturing best practices, I was able to optimize operations, ultimately reducing adhesive dispense waste by 20%. 
+        </p>
+        <p>
+            I also played a critical role in transitioning products from concept to pilot line production and into full-scale mass manufacturing. This involved improving the assembly line station logic to automate the generation of distinct serial numbers for multiple Powerwall specifications. Moreover, I integrated a Kubernetes architecture with GitHub Actions to create a CI/CD pipeline using Jenkins and Docker, ensuring a robust and automated deployment process.
+        </p>
+
+        <h3>Full Stack Web Developer - Consulting (Nov 2018 - Sep 2021)</h3>
+        <p>
+            As a Full Stack Web Developer, I collaborated with a team of developers to design and implement a virtual reality (VR) experience for Toyota Chile. This project was a strategic promotional initiative for a new vehicle and utilized cutting-edge technology, including JavaScript and KRpano, to deliver an immersive VR experience to customers. The success of this project provided Toyota with a novel way to engage with their target audience.
+        </p>
+        <p>
+            Additionally, I was responsible for designing and implementing a custom network protocol using C++ for real-time communication between embedded systems and a central server in an IoT project. The protocol was optimized for low-latency, high-throughput data transmission, ensuring reliable communication even under varying network conditions. In another key project, I integrated the Ford Argentina API into a customer relationship management (CRM) system used by sales personnel across multiple dealerships. This integration allowed for efficient tracking of vehicle orders, providing dealerships with critical insights into customer orders and streamlining the sales process using Laravel and PHP.
+        </p>
     </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+            <form
+            action="https://formspree.io/f/xanywnwa"
+            method="POST"
+        >
+            <label>
+            Your email:
+            <input type="email" name="email">
+            </label>
+            <label>
+            Your message:
+            <textarea name="message" rows="10"></textarea>
+            </label>
+            <!-- your other form fields go here -->
+            <button type="submit">Send</button>
+        </form>
+        </section>
+    
     <footer>
-        <p>&copy; 2024 Your Name</p>
+        <p>&copy; 2024 Daniel Hernandez</p>
     </footer>
 </body>
 </html>
