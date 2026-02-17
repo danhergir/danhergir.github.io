@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Hernandez Resume</title>
+    <link rel="icon" type="image/png" href="image.png">
+    <style>
+        :root {
+            --ink: #0f172a;
+            --muted: #475569;
+            --line: #dbe2ea;
+            --brand: #1d4ed8;
+            --paper: #ffffff;
+            --canvas: #f3f6fb;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.5;
+            background: var(--canvas);
+            color: var(--ink);
+        }
+
+        .resume {
+            max-width: 900px;
+            margin: 2rem auto 4rem;
+            background: var(--paper);
+            padding: 2rem;
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+        }
+
+        .resume h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .resume h2 {
+            font-size: 1.2rem;
+            margin: 1.75rem 0 0.75rem;
+            color: var(--brand);
+            border-bottom: 1px solid var(--line);
+            padding-bottom: 0.35rem;
+        }
+
+        .resume p {
+            margin: 0 0 0.75rem;
+        }
+
+        .resume-header {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .resume-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .resume-links a {
+            color: var(--ink);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .resume-links a:hover {
+            color: var(--brand);
+        }
+
+        .resume section {
+            margin-top: 1.25rem;
+        }
+
+        .resume-role {
+            margin-top: 1.25rem;
+        }
+
+        .resume-role-head {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 0.25rem;
+        }
+
+        .resume-role-title {
+            font-weight: 700;
+        }
+
+        .resume-role-company {
+            color: var(--brand);
+            font-weight: 600;
+        }
+
+        .resume-role-date,
+        .resume-role-location {
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+
+        .resume ul {
+            margin: 0.5rem 0 0;
+            padding-left: 1.1rem;
+        }
+
+        .resume li {
+            margin-bottom: 0.4rem;
+        }
+
+        @media (max-width: 760px) {
+            .resume {
+                margin: 0;
+                border: 0;
+                border-radius: 0;
+                box-shadow: none;
+                padding: 1.25rem;
+            }
+        }
+
+        @media print {
+            body {
+                background: #fff;
+            }
+
+            .resume {
+                border: 0;
+                margin: 0;
+                max-width: 100%;
+                padding: 0;
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="resume">
+        <header class="resume-header">
+            <h1>Daniel Hernandez</h1>
+            <p>Machine Learning Engineer | Production ML Systems | MLOps | Backend Platforms</p>
+            <p>Bogota, Colombia (Open to Remote)</p>
+            <div class="resume-links">
+                <a href="https://github.com/danhergir" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/danhergir" target="_blank">LinkedIn</a>
+            </div>
+        </header>
+
+        <section>
+            <h2>Summary</h2>
+            <p>Machine Learning Engineer building production-grade ML systems across computer vision, LLM-based architectures, and financial infrastructure. Experienced in end-to-end pipelines from feature engineering and model training to deployment, observability, and optimization.</p>
+        </section>
+
+        <section>
+            <h2>Experience</h2>
+
+            <article class="resume-role">
+                <div class="resume-role-head">
+                    <div>
+                        <div class="resume-role-title">Software Engineer (Payments Platform)</div>
+                        <div class="resume-role-company">PayJoy</div>
+                    </div>
+                    <div class="resume-role-date">Aug 2025 - Present</div>
+                </div>
+                <div class="resume-role-location">Bogota, Colombia</div>
+                <ul>
+                    <li>Optimize payment service database queries and indexing across 2 critical retrieval flows, improving performance under production load.</li>
+                    <li>Expand observability with 3 telemetry layers (Datadog APM, custom metrics, and alerting) to improve incident response.</li>
+                    <li>Drive payment processor integration expected to reduce annual transaction costs by ~$1M.</li>
+                </ul>
+            </article>
+
+            <article class="resume-role">
+                <div class="resume-role-head">
+                    <div>
+                        <div class="resume-role-title">Senior AI and Backend Engineer</div>
+                        <div class="resume-role-company">Reshut Tech</div>
+                    </div>
+                    <div class="resume-role-date">Dec 2024 - May 2025</div>
+                </div>
+                <div class="resume-role-location">Miami, USA (Remote)</div>
+                <ul>
+                    <li>Led end-to-end computer vision systems across 2 model families in PyTorch (YOLOv7 and Detectron2).</li>
+                    <li>Architected ML deployments on GCP with 3 delivery pillars: containerization, CI/CD, and service scaling.</li>
+                    <li>Introduced monitoring and logging to improve reliability of production AI services.</li>
+                </ul>
+            </article>
+
+            <article class="resume-role">
+                <div class="resume-role-head">
+                    <div>
+                        <div class="resume-role-title">Data Scientist</div>
+                        <div class="resume-role-company">Dataplicada</div>
+                    </div>
+                    <div class="resume-role-date">Aug 2020 - Nov 2024</div>
+                </div>
+                <div class="resume-role-location">Miami, USA (Remote)</div>
+                <ul>
+                    <li>Designed and deployed a RAG system with LangChain and 2 LLMs (Llama3 and GPT-4).</li>
+                    <li>Created Python ETL pipelines for 2 data modalities (structured and unstructured).</li>
+                    <li>Scaled analytics capabilities used by 100+ enterprise clients.</li>
+                </ul>
+            </article>
+
+            <article class="resume-role">
+                <div class="resume-role-head">
+                    <div>
+                        <div class="resume-role-title">Software Engineer Intern</div>
+                        <div class="resume-role-company">Tesla, Inc.</div>
+                    </div>
+                    <div class="resume-role-date">Sep 2022 - Dec 2022 (Concurrent Internship)</div>
+                </div>
+                <div class="resume-role-location">Reno, NV</div>
+                <ul>
+                    <li>Engineered real-time Python ETL pipelines for manufacturing data.</li>
+                    <li>Reduced adhesive waste by 20% by identifying line bottlenecks.</li>
+                    <li>Implemented Kubernetes-based CI/CD with Docker and Jenkins across 3 stages (build, test, and release).</li>
+                </ul>
+            </article>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <p>Python, SQL, C++, PyTorch, XGBoost, Computer Vision, RAG, FastAPI, GCP, Datadog APM, CI/CD, Docker, Kubernetes, ETL.</p>
+        </section>
+    </main>
+</body>
+</html>

@@ -122,6 +122,51 @@ nav a:hover::after {
     margin-bottom: 2rem;
 }
 
+.hero-meta {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem 1.5rem;
+    color: var(--gray);
+    font-weight: 600;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+}
+
+.hero-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hero-links a {
+    color: var(--secondary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.hero-links a:hover {
+    color: var(--primary);
+}
+
+.hero-impact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: -0.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-impact span {
+    background-color: rgba(37, 99, 235, 0.1);
+    color: var(--primary-dark);
+    border: 1px solid rgba(37, 99, 235, 0.2);
+    border-radius: 999px;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
 .btn {
     display: inline-block;
     background-color: var(--primary);
@@ -419,6 +464,20 @@ footer {
     
     .hero-content h2 {
         font-size: 1.25rem;
+    }
+
+    .hero-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: -0.5rem;
+    }
+
+    .hero-links {
+        gap: 0.75rem;
+    }
+
+    .hero-impact {
+        margin-top: 0;
     }
     
     .about-content {
