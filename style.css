@@ -111,12 +111,6 @@ h3 {
     margin-top: 0.875rem;
 }
 
-.about p.building {
-    margin-top: 1.25rem;
-    color: var(--on-brand);
-    font-weight: 600;
-}
-
 .about a {
     text-decoration-color: var(--on-brand-muted);
 }
