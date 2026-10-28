@@ -3,159 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel Hernandez Resume</title>
-    <link rel="icon" type="image/png" href="image.png">
+    <title>Resume · Daniel Hernandez</title>
+    <meta name="color-scheme" content="light dark">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="style.css">
     <style>
-        :root {
-            --ink: #0f172a;
-            --muted: #475569;
-            --line: #dbe2ea;
-            --brand: #1d4ed8;
-            --paper: #ffffff;
-            --canvas: #f3f6fb;
+        .resume-header p {
+            color: var(--muted);
         }
 
-        * {
-            box-sizing: border-box;
+        .resume-header .links {
+            margin-top: 1rem;
         }
 
-        body {
-            margin: 0;
-            font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.5;
-            background: var(--canvas);
-            color: var(--ink);
-        }
-
-        .resume {
-            max-width: 900px;
-            margin: 2rem auto 4rem;
-            background: var(--paper);
-            padding: 2rem;
-            border: 1px solid var(--line);
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
-        }
-
-        .resume h1 {
-            font-size: 2rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .resume h2 {
-            font-size: 1.2rem;
-            margin: 1.75rem 0 0.75rem;
-            color: var(--brand);
-            border-bottom: 1px solid var(--line);
-            padding-bottom: 0.35rem;
-        }
-
-        .resume p {
-            margin: 0 0 0.75rem;
-        }
-
-        .resume-header {
-            display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
-        }
-
-        .resume-links {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-
-        .resume-links a {
-            color: var(--ink);
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        .resume-links a:hover {
-            color: var(--brand);
-        }
-
-        .resume section {
-            margin-top: 1.25rem;
+        .back {
+            display: inline-block;
+            margin-bottom: 2.5rem;
+            color: var(--muted);
+            font-size: 0.9375rem;
         }
 
         .resume-role {
-            margin-top: 1.25rem;
+            margin-top: 2rem;
         }
 
         .resume-role-head {
             display: flex;
             justify-content: space-between;
+            align-items: baseline;
             gap: 1rem;
-            flex-wrap: wrap;
-            margin-bottom: 0.25rem;
-        }
-
-        .resume-role-title {
-            font-weight: 700;
         }
 
         .resume-role-company {
-            color: var(--brand);
-            font-weight: 600;
+            font-weight: 500;
         }
 
-        .resume-role-date,
+        .resume-role-title,
         .resume-role-location {
             color: var(--muted);
-            font-size: 0.95rem;
+            font-size: 0.9375rem;
+        }
+
+        .resume-role-head > div {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .resume-role-date {
+            color: var(--muted);
+            font-size: 0.875rem;
+            font-variant-numeric: tabular-nums;
+            white-space: nowrap;
         }
 
         .resume ul {
-            margin: 0.5rem 0 0;
-            padding-left: 1.1rem;
+            list-style: none;
+            margin-top: 0.75rem;
         }
 
         .resume li {
-            margin-bottom: 0.4rem;
+            position: relative;
+            padding-left: 1.125rem;
+            color: var(--muted);
+            font-size: 0.9375rem;
         }
 
-        @media (max-width: 760px) {
-            .resume {
-                margin: 0;
-                border: 0;
-                border-radius: 0;
-                box-shadow: none;
-                padding: 1.25rem;
+        .resume li + li {
+            margin-top: 0.4rem;
+        }
+
+        .resume li::before {
+            content: "";
+            position: absolute;
+            left: 0.125rem;
+            top: 0.72em;
+            width: 0.4rem;
+            height: 1px;
+            background: var(--link-line);
+        }
+
+        .resume section > p {
+            color: var(--muted);
+        }
+
+        @media (max-width: 560px) {
+            .resume-role-head {
+                flex-direction: column;
+                gap: 0;
             }
         }
 
         @media print {
-            body {
-                background: #fff;
+            :root {
+                --bg: #fff;
+                --fg: #000;
+                --muted: #333;
             }
 
-            .resume {
-                border: 0;
-                margin: 0;
-                max-width: 100%;
+            .back,
+            .resume-header .links {
+                display: none;
+            }
+
+            main {
                 padding: 0;
-                box-shadow: none;
+                max-width: none;
+            }
+
+            main > * {
+                animation: none;
             }
         }
     </style>
 </head>
 <body>
     <main class="resume">
+        <a class="back" href="./">Back to home</a>
         <header class="resume-header">
             <h1>Daniel Hernandez</h1>
-            <p>Machine Learning Engineer | Production ML Systems | MLOps | Backend Platforms</p>
-            <p>Bogota, Colombia (Open to Remote)</p>
-            <div class="resume-links">
-                <a href="https://github.com/danhergir" target="_blank">GitHub</a>
-                <a href="https://linkedin.com/in/danhergir" target="_blank">LinkedIn</a>
-            </div>
+            <p>Software Engineer · Payments &amp; ML · Bogotá, Colombia (open to remote)</p>
+            <nav class="links" aria-label="Contact and profiles">
+                <a href="mailto:danielandres65@gmail.com">Email</a>
+                <a href="https://linkedin.com/in/danhergir" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://github.com/danhergir" target="_blank" rel="noopener">GitHub</a>
+                <a href="Daniel-Hernandez-CV.pdf" download>Download PDF</a>
+            </nav>
         </header>
 
         <section>
             <h2>Summary</h2>
-            <p>Machine Learning Engineer building production-grade ML systems across computer vision, LLM-based architectures, and financial infrastructure. Experienced in end-to-end pipelines from feature engineering and model training to deployment, observability, and optimization.</p>
+            <p>Software engineer on the Payments team at PayJoy, building payment integrations across Latin America and India. Background in production machine learning: computer vision, RAG systems, and data pipelines.</p>
         </section>
 
         <section>
@@ -167,7 +147,7 @@
                         <div class="resume-role-title">Software Engineer (Payments Team)</div>
                         <div class="resume-role-company">PayJoy</div>
                     </div>
-                    <div class="resume-role-date">Aug 2025 - Present</div>
+                    <div class="resume-role-date">Aug 2025 – Present</div>
                 </div>
                 <div class="resume-role-location">Bogota, Colombia (Hybrid)</div>
                 <ul>
@@ -187,7 +167,7 @@
                         <div class="resume-role-title">Senior AI and Backend Engineer</div>
                         <div class="resume-role-company">Reshut Tech</div>
                     </div>
-                    <div class="resume-role-date">Dec 2024 - May 2025</div>
+                    <div class="resume-role-date">Dec 2024 – May 2025</div>
                 </div>
                 <div class="resume-role-location">Miami, USA (Remote)</div>
                 <ul>
@@ -203,7 +183,7 @@
                         <div class="resume-role-title">Data Scientist</div>
                         <div class="resume-role-company">Dataplicada</div>
                     </div>
-                    <div class="resume-role-date">Aug 2020 - Nov 2024</div>
+                    <div class="resume-role-date">Aug 2020 – Nov 2024</div>
                 </div>
                 <div class="resume-role-location">Miami, USA (Remote)</div>
                 <ul>
@@ -219,7 +199,7 @@
                         <div class="resume-role-title">Software Engineer Intern</div>
                         <div class="resume-role-company">Tesla, Inc.</div>
                     </div>
-                    <div class="resume-role-date">Sep 2022 - Dec 2022 (Concurrent Internship)</div>
+                    <div class="resume-role-date">Sep 2022 – Dec 2022 (Concurrent Internship)</div>
                 </div>
                 <div class="resume-role-location">Reno, NV</div>
                 <ul>
@@ -237,7 +217,7 @@
                         <div class="resume-role-title">Software Engineering Consultant (Toyota Chile, Ford Argentina)</div>
                         <div class="resume-role-company">Independent Consultant</div>
                     </div>
-                    <div class="resume-role-date">Jan 2018 - Dec 2020</div>
+                    <div class="resume-role-date">Jan 2018 – Dec 2020</div>
                 </div>
                 <div class="resume-role-location">Remote</div>
                 <ul>
