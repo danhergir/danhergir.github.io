@@ -164,16 +164,21 @@
             <article class="resume-role">
                 <div class="resume-role-head">
                     <div>
-                        <div class="resume-role-title">Software Engineer (Payments Platform)</div>
+                        <div class="resume-role-title">Software Engineer (Payments Team)</div>
                         <div class="resume-role-company">PayJoy</div>
                     </div>
                     <div class="resume-role-date">Aug 2025 - Present</div>
                 </div>
-                <div class="resume-role-location">Bogota, Colombia</div>
+                <div class="resume-role-location">Bogota, Colombia (Hybrid)</div>
                 <ul>
-                    <li>Optimize payment service database queries and indexing across 2 critical retrieval flows, improving performance under production load.</li>
-                    <li>Expand observability with 3 telemetry layers (Datadog APM, custom metrics, and alerting) to improve incident response.</li>
-                    <li>Drive payment processor integration expected to reduce annual transaction costs by ~$1M.</li>
+                    <li>Integrate Bancolombia and Wompi payment rails handling 30K+ transactions/day, raising payment success rate from 90% to 99%.</li>
+                    <li>Automate reconciliation for Bancolombia and Wompi settlements, cutting reconciliation time from 5–6 minutes to under 60 seconds per query (80%+ faster).</li>
+                    <li>Make critical payment retrieval flows 3x faster by profiling slow queries and adding targeted database indexes.</li>
+                    <li>Build a 3-layer observability stack (Datadog APM, custom metrics, and alerting) and codify p95/p99 latency monitors, alerts, and dashboards in Terraform, accelerating incident detection.</li>
+                    <li>Lead the Razorpay payment integration, enabling PayJoy's expansion into India.</li>
+                    <li>Lead Bitso payment processor integration, projected to reduce annual transaction costs by ~$1M while improving reliability and scalability.</li>
+                    <li>Engineer a zero-to-production Kasnet integration, one of Peru's largest payment networks, enabling QR-code and e-wallet payments and unlocking up to $3M in projected annual savings.</li>
+                    <li>Roll out offline code-generation workflows across engineering, product, and operations, mitigating regulatory risk in Brazil.</li>
                 </ul>
             </article>
 
@@ -187,9 +192,9 @@
                 </div>
                 <div class="resume-role-location">Miami, USA (Remote)</div>
                 <ul>
-                    <li>Led end-to-end computer vision systems across 2 model families in PyTorch (YOLOv7 and Detectron2).</li>
-                    <li>Architected ML deployments on GCP with 3 delivery pillars: containerization, CI/CD, and service scaling.</li>
-                    <li>Introduced monitoring and logging to improve reliability of production AI services.</li>
+                    <li>Led computer vision development for YOLOv7 and Detectron2 production models, improving accuracy and reliability through systematic fine-tuning and evaluation.</li>
+                    <li>Architected GCP-based ML deployment workflows covering containerization, CI/CD, and auto-scaling, enabling consistent and repeatable production releases.</li>
+                    <li>Introduced production monitoring and metric-based alerting for AI services, improving runtime reliability and cutting issue triage time.</li>
                 </ul>
             </article>
 
@@ -203,9 +208,9 @@
                 </div>
                 <div class="resume-role-location">Miami, USA (Remote)</div>
                 <ul>
-                    <li>Designed and deployed a RAG system with LangChain and 2 LLMs (Llama3 and GPT-4).</li>
-                    <li>Created Python ETL pipelines for 2 data modalities (structured and unstructured).</li>
-                    <li>Scaled analytics capabilities used by 100+ enterprise clients.</li>
+                    <li>Built and deployed a RAG pipeline (LangChain, Llama3, GPT-4) that transformed large-scale customer feedback into actionable business insights.</li>
+                    <li>Built Python ETL pipelines handling structured and unstructured data, accelerating data readiness for downstream analysis.</li>
+                    <li>Scaled analytics platform to serve 100+ enterprise clients, enabling faster data-driven decision-making.</li>
                 </ul>
             </article>
 
@@ -219,16 +224,33 @@
                 </div>
                 <div class="resume-role-location">Reno, NV</div>
                 <ul>
-                    <li>Engineered real-time Python ETL pipelines for manufacturing data.</li>
-                    <li>Reduced adhesive waste by 20% by identifying line bottlenecks.</li>
-                    <li>Implemented Kubernetes-based CI/CD with Docker and Jenkins across 3 stages (build, test, and release).</li>
+                    <li>Cut adhesive dispense waste by 20% by engineering real-time Python ETL pipelines that pinpointed Powerwall manufacturing bottlenecks.</li>
+                    <li>Designed and built a predictive-maintenance system that forecasts Powerwall station failures from first-pass yield (FPY), downtime, and production telemetry, flagging at-risk stations before they go down.</li>
+                    <li>Built Tableau dashboards and Python visualizations on Ignition SCADA data, giving production engineers clear visibility into Powerwall line performance.</li>
+                    <li>Hardened assembly-station logic and data-integrity checks across 4+ Powerwall configurations, eliminating serial-number conflicts.</li>
+                    <li>Established Kubernetes-based CI/CD with Docker and Jenkins, automating build, test, and release stages.</li>
+                </ul>
+            </article>
+
+            <article class="resume-role">
+                <div class="resume-role-head">
+                    <div>
+                        <div class="resume-role-title">Software Engineering Consultant (Toyota Chile, Ford Argentina)</div>
+                        <div class="resume-role-company">Independent Consultant</div>
+                    </div>
+                    <div class="resume-role-date">Jan 2018 - Dec 2020</div>
+                </div>
+                <div class="resume-role-location">Remote</div>
+                <ul>
+                    <li>Delivered a production VR showcase for Toyota Chile used in live customer-facing marketing campaigns.</li>
+                    <li>Integrated Ford Argentina APIs into a multi-dealership CRM, improving vehicle-order tracking accuracy and reliability across sales teams.</li>
                 </ul>
             </article>
         </section>
 
         <section>
             <h2>Technical Skills</h2>
-            <p>Python, SQL, C++, PyTorch, XGBoost, Computer Vision, RAG, FastAPI, GCP, Datadog APM, CI/CD, Docker, Kubernetes, ETL.</p>
+            <p>Python, SQL, C++, PyTorch, XGBoost, Computer Vision, RAG, FastAPI, GCP, Terraform, Datadog APM, CI/CD, Docker, Kubernetes, ETL, Tableau.</p>
         </section>
     </main>
 </body>
